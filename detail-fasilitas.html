@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brown: "#A1722A",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="w-full bg-white">
+      <div class="mx-auto max-w-7xl">
+        <div class="relative flex items-center justify-between h-20">
+          <div class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
+            <div class="flex items-center flex-shrink-0">
+              <a href="/index.html">
+                <img class="hidden w-auto h-8 lg:block" src="/assets/image/logo-1.svg" alt="Your Company" />
+              </a>
+            </div>
+          </div>
+          <button class="px-10 py-2 text-sm font-semibold shadow-md text-brown outline outline-brown hover:bg-brown hover:text-white focus:outline-none focus:ring-2 focus:ring-brown focus:ring-opacity-75">Kontak</button>
+          <button class="px-4 py-2 ml-10 text-sm font-semibold text-white shadow-md bg-brown outline outline-brown hover:bg-white hover:text-brown focus:outline-none focus:ring-2 focus:ring-brown focus:ring-opacity-75">Booking Online</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero  -->
+    <section class="bg-brown">
+      <div class="flex items-center justify-between text-white h-28 lg:container lg:mx-auto">
+        <h1>Home > Fasilitas > Giri Wijaya</h1>
+        <h1 class="font-black">Rp 1.000.000 <span class="text-sm font-light">Per Hari</span></h1>
+      </div>
+    </section>
+
+    <div class="flex lg:container lg:mx-auto">
+      <div class="flex flex-col w-2/3">
+        <section class="mt-10 lg:container lg:mx-auto">
+          <h2 class="mb-6 text-3xl text-brown">Giri Wijaya</h2>
+          <div id="main-carousel" class="splide" aria-label="My Awesome Gallery">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="/assets/image/detail-fasilitas-1.png" alt="" class="w-full h-96" />
+                </li>
+                <li class="splide__slide">
+                  <img src="/assets/image/detail-fasilitas-2.png" alt="" class="w-full h-96" />
+                </li>
+                <li class="splide__slide">
+                  <img src="/assets/image/detail-fasilitas-3.png" alt="" class="w-full h-96" />
+                </li>
+                <li class="splide__slide">
+                  <img src="/assets/image/detail-fasilitas-4.png" alt="" class="w-full h-96" />
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <ul id="thumbnails" class="thumbnails">
+            <li class="thumbnail">
+              <img src="/assets/image/detail-fasilitas-1.png" alt="" />
+            </li>
+            <li class="thumbnail">
+              <img src="/assets/image/detail-fasilitas-2.png" alt="" />
+            </li>
+            <li class="thumbnail">
+              <img src="/assets/image/detail-fasilitas-3.png" alt="" />
+            </li>
+            <li class="thumbnail">
+              <img src="/assets/image/detail-fasilitas-4.png" alt="" />
+            </li>
+          </ul>
+        </section>
+
+        <section class="mt-10 lg:container lg:mx-auto">
+          <h2 class="mb-6 text-3xl text-brown">Tambahkan Item</h2>
+          <div class="grid grid-cols-4 gap-4">
+            <div class="flex items-center justify-between h-20 bg-slate-200">
+              <h1 class="pl-3">kasur</h1>
+              <div class="flex items-center justify-around w-1/2 h-full text-white bg-brown">
+                <span class="px-2 border">+</span>
+                <span>1</span>
+                <span class="px-2 border">-</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between h-20 bg-slate-200">
+              <h1 class="pl-3">kasur</h1>
+              <div class="flex items-center justify-around w-1/2 h-full text-white bg-brown">
+                <span class="px-2 border">+</span>
+                <span>1</span>
+                <span class="px-2 border">-</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between h-20 bg-slate-200">
+              <h1 class="pl-3">kasur</h1>
+              <div class="flex items-center justify-around w-1/2 h-full text-white bg-brown">
+                <span class="px-2 border">+</span>
+                <span>1</span>
+                <span class="px-2 border">-</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between h-20 bg-slate-200">
+              <h1 class="pl-3">kasur</h1>
+              <div class="flex items-center justify-around w-1/2 h-full text-white bg-brown">
+                <span class="px-2 border">+</span>
+                <span>1</span>
+                <span class="px-2 border">-</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between h-20 bg-slate-200">
+              <h1 class="pl-3">kasur</h1>
+              <div class="flex items-center justify-around w-1/2 h-full text-white bg-brown">
+                <span class="px-2 border">+</span>
+                <span>1</span>
+                <span class="px-2 border">-</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between h-20 bg-slate-200">
+              <h1 class="pl-3">kasur</h1>
+              <div class="flex items-center justify-around w-1/2 h-full text-white bg-brown">
+                <span class="px-2 border">+</span>
+                <span>1</span>
+                <span class="px-2 border">-</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between h-20 bg-slate-200">
+              <h1 class="pl-3">kasur</h1>
+              <div class="flex items-center justify-around w-1/2 h-full text-white bg-brown">
+                <span class="px-2 border">+</span>
+                <span>1</span>
+                <span class="px-2 border">-</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-10 lg:container lg:mx-auto">
+          <h2 class="mb-6 text-3xl text-brown">Deskripsi</h2>
+          <div class="p-6 text-sm border">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</div>
+        </section>
+      </div>
+      <div class="inline-block w-1/4 mx-auto mt-10">
+        <h2 class="mb-6 text-3xl text-brown">Book Your Room</h2>
+        <div class="flex items-center justify-center">
+          <div class="w-full max-w-sm shadow-lg">
+            <div class="p-5 md:p-8 dark:bg-slate-200">
+              <div class="flex items-center justify-between px-4">
+                <span class="font-bold text-brown focus:outline-none">October 2020</span>
+                <div class="flex items-center">
+                  <button aria-label="calendar backward" class="text-slate-800 focus:text-gray-800 hover:text-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <polyline points="15 6 9 12 15 18" />
+                    </svg>
+                  </button>
+                  <button aria-label="calendar forward" class="ml-3 text-slate-800 focus:text-gray-800 hover:text-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <polyline points="9 6 15 12 9 18" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-12 overflow-x-auto">
+                <table class="w-full">
+                  <thead>
+                    <tr>
+                      <th>
+                        <div class="flex justify-center w-full">
+                          <p class="text-base font-medium text-center text-slate-800">Mo</p>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="flex justify-center w-full">
+                          <p class="text-base font-medium text-center text-slate-800">Tu</p>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="flex justify-center w-full">
+                          <p class="text-base font-medium text-center text-slate-800">We</p>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="flex justify-center w-full">
+                          <p class="text-base font-medium text-center text-slate-800">Th</p>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="flex justify-center w-full">
+                          <p class="text-base font-medium text-center text-slate-800">Fr</p>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="flex justify-center w-full">
+                          <p class="text-base font-medium text-center text-slate-800">Sa</p>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="flex justify-center w-full">
+                          <p class="text-base font-medium text-center text-slate-800">Su</p>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="pt-6">
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer"></div>
+                      </td>
+                      <td class="pt-6">
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer"></div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer"></div>
+                      </td>
+                      <td class="pt-6">
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">1</p>
+                        </div>
+                      </td>
+                      <td class="pt-6">
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">2</p>
+                        </div>
+                      </td>
+                      <td class="pt-6">
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base text-gray-500">3</p>
+                        </div>
+                      </td>
+                      <td class="pt-6">
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base text-gray-500">4</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">5</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">6</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">7</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="w-full h-full">
+                          <div class="flex items-center justify-center w-full cursor-pointer">
+                            <a role="link" tabindex="0" class="flex items-center justify-center w-8 h-8 text-base font-medium text-white bg-brown focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brown focus:bg-brown hover:bg-brown">8</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">9</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base text-gray-500">10</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base text-gray-500">11</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">12</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">13</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">14</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">15</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">16</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base text-gray-500">17</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base text-gray-500">18</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">19</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">20</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">21</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">22</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">23</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base text-gray-500">24</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base text-gray-500">25</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">26</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">27</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">28</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">29</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="flex justify-center w-full px-2 py-2 cursor-pointer">
+                          <p class="text-base font-medium text-gray-500">30</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="pt-16 bg-slate-200 mt-14">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap justify-between">
+          <div class="w-full mb-12 font-medium text-brown md:w-1/4">
+            <img src="/assets/image/logo-1.svg" alt="" />
+          </div>
+          <div class="w-full mb-12 md:w-1/4">
+            <h3 class="mb-5 text-xl font-semibold text-brown">TENTANG WIKASATRIAN</h3>
+            <ul class="text-slate-500">
+              <li>
+                <a href="#" class="inline-block mb-3 text-base hover:text-danger">Profile</a>
+              </li>
+              <li>
+                <a href="#" class="inline-block mb-3 text-base hover:text-danger">Visi Misi</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full mb-12 md:w-1/4">
+            <h3 class="mb-5 text-xl font-semibold text-brown">Fasilitas</h3>
+            <ul class="flex flex-col flex-wrap text-slate-500 h-36">
+              <li>
+                <a href="#home" class="inline-block mb-3 text-base hover:text-danger">1. Giri Wijaya</a>
+              </li>
+              <li>
+                <a href="#about" class="inline-block mb-3 text-base hover:text-danger">2. Giri Sasan</a>
+              </li>
+              <li>
+                <a href="#portfolio" class="inline-block mb-3 text-base hover:text-danger">3. Giti Pustaka</a>
+              </li>
+              <li>
+                <a href="#clients" class="inline-block mb-3 text-base hover:text-danger">4. Giti Boja</a>
+              </li>
+              <li>
+                <a href="#home" class="inline-block mb-3 text-base hover:text-danger">5. Giri Unggul</a>
+              </li>
+              <li>
+                <a href="#about" class="inline-block mb-3 text-base hover:text-danger">6. Ruang Rapat</a>
+              </li>
+              <li>
+                <a href="#portfolio" class="inline-block mb-3 text-base hover:text-danger">7. Giri Pustaka</a>
+              </li>
+              <li>
+                <a href="#clients" class="inline-block mb-3 text-base hover:text-danger">8. Perkemahan</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full mb-12 md:w-1/4">
+            <ul class="flex items-end justify-around w-full h-44">
+              <li class="h-10">
+                <div class="flex flex-col items-center justify-center w-12 h-full mb-10 text-white bg-brown">
+                  <img src="/assets/image/phone.svg" alt="Icon Fasilitas" width="20px" />
+                </div>
+              </li>
+              <li class="h-10">
+                <div class="flex flex-col items-center justify-center w-12 h-full mb-10 text-white bg-brown">
+                  <img src="/assets/image/instagram.svg" alt="Icon Fasilitas" width="20px" />
+                </div>
+              </li>
+              <li class="h-10">
+                <div class="flex flex-col items-center justify-center w-12 h-full mb-10 text-white bg-brown">
+                  <img src="/assets/image/facebook.svg" alt="Icon Fasilitas" width="20px" />
+                </div>
+              </li>
+              <li class="h-10">
+                <div class="flex flex-col items-center justify-center w-12 h-full mb-10 text-white bg-brown">
+                  <img src="/assets/image/youtube.svg" alt="Icon Fasilitas" width="20px" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <script>
+      var splide = new Splide("#main-carousel", {
+        pagination: false,
+      });
+
+      var thumbnails = document.getElementsByClassName("thumbnail");
+      var current;
+
+      for (var i = 0; i < thumbnails.length; i++) {
+        initThumbnail(thumbnails[i], i);
+      }
+
+      function initThumbnail(thumbnail, index) {
+        thumbnail.addEventListener("click", function () {
+          splide.go(index);
+        });
+      }
+
+      splide.on("mounted move", function () {
+        var thumbnail = thumbnails[splide.index];
+
+        if (thumbnail) {
+          if (current) {
+            current.classList.remove("is-active");
+          }
+
+          thumbnail.classList.add("is-active");
+          current = thumbnail;
+        }
+      });
+
+      splide.mount();
+    </script>
+  </body>
+</html>

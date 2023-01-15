@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Cinzel", serif;
+}
+
+.quote-form input::placeholder {
+  color: #a1722a;
+}
+
+.thumbnails {
+  display: flex;
+  margin: 1rem auto 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+}

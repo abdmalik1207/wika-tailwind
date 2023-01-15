@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brown: "#A1722A",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="w-full bg-white">
+      <div class="mx-auto max-w-7xl">
+        <div class="relative flex items-center justify-between h-20">
+          <div class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
+            <div class="flex items-center flex-shrink-0">
+              <a href="/index.html">
+                <img class="hidden w-auto h-8 lg:block" src="/assets/image/logo-1.svg" alt="Your Company" />
+              </a>
+            </div>
+          </div>
+          <button class="px-10 py-2 text-sm font-semibold shadow-md text-brown outline outline-brown hover:bg-brown hover:text-white focus:outline-none focus:ring-2 focus:ring-brown focus:ring-opacity-75">Kontak</button>
+          <button class="px-4 py-2 ml-10 text-sm font-semibold text-white shadow-md bg-brown outline outline-brown hover:bg-white hover:text-brown focus:outline-none focus:ring-2 focus:ring-brown focus:ring-opacity-75">Booking Online</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section  -->
+    <section>
+      <img src="/assets/image/banner.svg" alt="houses on the water" class="w-full" />
+      <div class="absolute flex flex-col items-start justify-center w-2/3 left-12 top-52">
+        <img src="/assets/image/logo-2.svg" alt="" />
+        <h1 class="w-1/2 pt-4 text-3xl text-white">Pembelajaran Kepemimpinan Berbasis Kearifan Lokal</h1>
+      </div>
+    </section>
+
+    <!-- Quote Form -->
+    <section class="container z-10 flex items-center justify-between h-32 p-12 mx-auto -mt-16 bg-gray-200 opacity-95 quote-form">
+      <div class="flex flex-col items-start justify-between w-1/4 h-20">
+        <h1>Check In / Check Out</h1>
+        <input class="px-3 py-2 mr-8 shadow cursor-pointer outline outline-brown focus:outline-none focus:ring-2 focus:ring-brown focus:ring-opacity-75" type="text" placeholder="Check In / Check Out" onfocus="(this.type='date')" onblur="(this.type='text')" />
+      </div>
+      <div class="flex flex-col items-start justify-between w-1/4 h-20">
+        <h1>Fasilitas</h1>
+        <select class="block w-full px-4 py-2 m-0 text-base font-normal transition ease-in-out bg-white bg-no-repeat appearance-none text-brown form-select bg-clip-padding focus:text-gray-700 outline outline-brown focus:outline-none focus:ring-2 focus:ring-brown focus:ring-opacity-75" aria-label="Default select example">
+          <option class="text-brown" selected>Fasilitas</option>
+          <option class="text-brown" value="1">One</option>
+          <option class="text-brown" value="2">Two</option>
+          <option class="text-brown" value="3">Three</option>
+        </select>
+      </div>
+
+      <div class="flex items-end w-1/4 h-20">
+        <button class="w-full px-4 py-2 font-bold text-white rounded-none bg-brown focus:outline-none focus:ring-2 focus:ring-brown focus:ring-opacity-75">Cek Ketersediaan</button>
+      </div>
+    </section>
+
+    <!-- Popular Destination -->
+    <section class="container mx-auto mt-10">
+      <h2 class="mb-6 text-3xl text-brown">Popular Destinations</h2>
+      <div class="flex justify-between">
+        <div class="relative">
+          <div class="absolute w-1/2 top-4 left-32 bg-brown">
+            <h1 class="text-center text-white">1.000.000/ Hari</h1>
+          </div>
+          <div class="max-w-sm shadow-lg">
+            <img class="w-full" src="/assets/image/fasilitas-1.svg" />
+            <div class="flex items-center justify-between px-6 py-3 bg-brown">
+              <span class="text-white">Giri Wijaya</span>
+              <span><img src="/assets/image/fasilitas-icon-1.svg" alt="Icon Fasilitas" /></span>
+              <span><img src="/assets/image/fasilitas-icon-2.svg" alt="Icon Fasilitas" /></span>
+              <span><img src="/assets/image/fasilitas-icon-3.svg" alt="Icon Fasilitas" /></span>
+              <span><img src="/assets/image/fasilitas-icon-4.svg" alt="Icon Fasilitas" /></span>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="absolute w-1/2 top-4 left-32 bg-brown">
+            <h1 class="text-center text-white">1.000.000/ Hari</h1>
+          </div>
+          <div class="max-w-sm shadow-lg">
+            <img class="w-full" src="/assets/image/fasilitas-2.svg" />
+            <div class="flex items-center justify-between px-6 py-3 bg-brown">
+              <span class="text-white">Giri Budaya</span>
+              <span><img src="/assets/image/fasilitas-icon-1.svg" alt="Icon Fasilitas" /></span>
+              <span><img src="/assets/image/fasilitas-icon-2.svg" alt="Icon Fasilitas" /></span>
+              <span><img src="/assets/image/fasilitas-icon-3.svg" alt="Icon Fasilitas" /></span>
+              <span><img src="/assets/image/fasilitas-icon-4.svg" alt="Icon Fasilitas" /></span>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="absolute w-1/2 top-4 left-32 bg-brown">
+            <h1 class="text-center text-white">1.000.000/ Hari</h1>
+          </div>
+          <div class="max-w-sm shadow-lg">
+            <img class="w-full" src="/assets/image/fasilitas-3.svg" />
+            <div class="flex items-center justify-between px-6 py-3 bg-brown">
+              <span class="text-white">Giri Sasana</span>
+              <span><img src="/assets/image/fasilitas-icon-1.svg" alt="Icon Fasilitas" /></span>
+              <span><img src="/assets/image/fasilitas-icon-2.svg" alt="Icon Fasilitas" /></span>
+              <span><img src="/assets/image/fasilitas-icon-3.svg" alt="Icon Fasilitas" /></span>
+              <span><img src="/assets/image/fasilitas-icon-4.svg" alt="Icon Fasilitas" /></span>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="absolute w-1/2 top-4 left-32 bg-brown">
+            <h1 class="text-center text-white">1.000.000/ Hari</h1>
+          </div>
+          <div class="max-w-sm shadow-lg">
+            <img class="w-full" src="/assets/image/fasilitas-4.svg" />
+            <div class="flex items-center justify-between px-6 py-3 bg-brown">
+              <span class="text-white">Giri Pustaka</span>
+              <span><img src="/assets/image/fasilitas-icon-1.svg" alt="Icon Fasilitas" /></span>
+              <span><img src="/assets/image/fasilitas-icon-2.svg" alt="Icon Fasilitas" /></span>
+              <span><img src="/assets/image/fasilitas-icon-3.svg" alt="Icon Fasilitas" /></span>
+              <span><img src="/assets/image/fasilitas-icon-4.svg" alt="Icon Fasilitas" /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center w-full mt-8">
+        <a href="/fasilitas.html" class="px-10 py-1 font-semibold text-center shadow-md text-brown outline outline-brown hover:bg-brown hover:text-white focus:outline-none focus:ring-2 focus:ring-brown focus:ring-opacity-75">Lihat Semua Fasilitas</a>
+      </div>
+    </section>
+
+    <!-- Room Services -->
+    <section class="container mx-auto mt-10">
+      <h2 class="mb-6 text-3xl text-brown">Room Services</h2>
+      <div class="flex justify-between">
+        <div class="w-1/6">
+          <div class="max-w-sm shadow-lg">
+            <div class="flex flex-col items-center justify-between px-6 py-3 mb-10 text-white bg-brown">
+              <img src="/assets/image/fasilitas-icon-1.svg" alt="Icon Fasilitas" width="100px" />
+              <h1 class="pt-4">Wifi</h1>
+              <h1 class="text-sm">Wifi Included</h1>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/6">
+          <div class="max-w-sm shadow-lg">
+            <div class="flex flex-col items-center justify-between px-6 py-3 mb-10 text-white bg-brown">
+              <img src="/assets/image/fasilitas-icon-2.svg" alt="Icon Fasilitas" width="100px" />
+              <h1 class="pt-4">Wifi</h1>
+              <h1 class="text-sm">Wifi Included</h1>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/6">
+          <div class="max-w-sm shadow-lg">
+            <div class="flex flex-col items-center justify-between px-6 py-3 mb-10 text-white bg-brown">
+              <img src="/assets/image/fasilitas-icon-3.svg" alt="Icon Fasilitas" width="100px" />
+              <h1 class="pt-4">Wifi</h1>
+              <h1 class="text-sm">Wifi Included</h1>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/6">
+          <div class="max-w-sm shadow-lg">
+            <div class="flex flex-col items-center justify-between px-6 py-3 mb-10 text-white bg-brown">
+              <img src="/assets/image/fasilitas-icon-4.svg" alt="Icon Fasilitas" width="100px" />
+              <h1 class="pt-4">Wifi</h1>
+              <h1 class="text-sm">Wifi Included</h1>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/6">
+          <div class="max-w-sm shadow-lg">
+            <div class="flex flex-col items-center justify-between px-6 py-3 mb-10 text-white bg-brown">
+              <img src="/assets/image/fasilitas-icon-5.svg" alt="Icon Fasilitas" width="100px" />
+              <h1 class="pt-4">Wifi</h1>
+              <h1 class="text-sm">Wifi Included</h1>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section class="container mx-auto mt-10">
+      <h2 class="mb-6 text-3xl text-brown">Testimoni</h2>
+      <div class="flex justify-between">
+        <div class="w-1/3">
+          <div class="max-w-sm shadow-lg">
+            <div class="flex items-center justify-center w-full text-center text-white h-60 bg-brown">
+              <h1 class="px-6 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</h1>
+            </div>
+            <div class="flex flex-col items-center justify-between px-6 py-3 mb-10 bg-white text-brown">
+              <img src="/assets/image/testimoni-1.png" alt="Icon Fasilitas" class="-mt-12" />
+              <h1 class="pt-4 font-extrabold">Adam Smash</h1>
+              <h1 class="pb-4 text-sm">Wirausaha</h1>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/3">
+          <div class="max-w-sm shadow-lg">
+            <div class="flex items-center justify-center w-full text-center text-white h-60 bg-brown">
+              <h1 class="px-6 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</h1>
+            </div>
+            <div class="flex flex-col items-center justify-between px-6 py-3 mb-10 bg-white text-brown">
+              <img src="/assets/image/testimoni-2.png" alt="Icon Fasilitas" class="-mt-12" />
+              <h1 class="pt-4 font-extrabold">Adam Smash</h1>
+              <h1 class="pb-4 text-sm">Wirausaha</h1>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/3">
+          <div class="max-w-sm shadow-lg">
+            <div class="flex items-center justify-center w-full text-center text-white h-60 bg-brown">
+              <h1 class="px-6 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</h1>
+            </div>
+            <div class="flex flex-col items-center justify-between px-6 py-3 mb-10 bg-white text-brown">
+              <img src="/assets/image/testimoni-3.png" alt="Icon Fasilitas" class="-mt-12" />
+              <h1 class="pt-4 font-extrabold">Adam Smash</h1>
+              <h1 class="pb-4 text-sm">Wirausaha</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak Kami -->
+    <section class="container mx-auto mt-10">
+      <h2 class="mb-6 text-3xl text-brown">Kontak Kami</h2>
+      <div class="flex items-center justify-between">
+        <div class="flex flex-col justify-between w-1/2">
+          <div class="flex h-16 my-3">
+            <div class="flex flex-col items-center justify-center w-20 h-full mb-10 text-white bg-brown">
+              <img src="/assets/image/phone.svg" alt="Icon Fasilitas" width="30px" />
+            </div>
+            <div class="flex items-center w-full text-brown bg-slate-200">
+              <h1 class="px-10">08231912xxxxxx</h1>
+            </div>
+          </div>
+          <div class="flex h-16 my-3">
+            <div class="flex flex-col items-center justify-center w-20 h-full mb-10 text-white bg-brown">
+              <img src="/assets/image/instagram.svg" alt="Icon Fasilitas" width="30px" />
+            </div>
+            <div class="flex items-center w-full text-brown bg-slate-200">
+              <h1 class="px-10">@loreipsum</h1>
+            </div>
+          </div>
+          <div class="flex h-16 my-3">
+            <div class="flex flex-col items-center justify-center w-20 h-full mb-10 text-white bg-brown">
+              <img src="/assets/image/facebook.svg" alt="Icon Fasilitas" width="30px" />
+            </div>
+            <div class="flex items-center w-full text-brown bg-slate-200">
+              <h1 class="px-10">Lorem Ipsum</h1>
+            </div>
+          </div>
+          <div class="flex h-16 my-3">
+            <div class="flex flex-col items-center justify-center w-20 h-full mb-10 text-white bg-brown">
+              <img src="/assets/image/youtube.svg" alt="Icon Fasilitas" width="30px" />
+            </div>
+            <div class="flex items-center w-full text-brown bg-slate-200">
+              <h1 class="px-10">Lorem Ipsum</h1>
+            </div>
+          </div>
+        </div>
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="320" id="gmap_canvas" src="https://maps.google.com/maps?q=Jakarta&t=k&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:320px;width:600px;}</style><a href="https://www.embedgooglemap.net">google maps api html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:320px;width:600px;}</style></div></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-16 bg-slate-200 mt-14">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap justify-between ">
+          <div class="w-full mb-12 font-medium text-brown md:w-1/4">
+            <img src="/assets/image/logo-1.svg" alt="">
+          </div>
+          <div class="w-full mb-12 md:w-1/4">
+            <h3 class="mb-5 text-xl font-semibold text-brown">TENTANG WIKASATRIAN</h3>
+            <ul class="text-slate-500">
+              <li>
+                <a href="#" class="inline-block mb-3 text-base hover:text-danger">Profile</a>
+              </li>
+              <li>
+                <a href="#" class="inline-block mb-3 text-base hover:text-danger">Visi Misi</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full mb-12 md:w-1/4">
+            <h3 class="mb-5 text-xl font-semibold text-brown">Fasilitas</h3>
+            <ul class="flex flex-col flex-wrap text-slate-500 h-36">
+              <li>
+                <a href="#home" class="inline-block mb-3 text-base hover:text-danger">1. Giri Wijaya</a>
+              </li>
+              <li>
+                <a href="#about" class="inline-block mb-3 text-base hover:text-danger">2. Giri Sasan</a>
+              </li>
+              <li>
+                <a href="#portfolio" class="inline-block mb-3 text-base hover:text-danger">3. Giti Pustaka</a>
+              </li>
+              <li>
+                <a href="#clients" class="inline-block mb-3 text-base hover:text-danger">4. Giti Boja</a>
+              </li>
+              <li>
+                <a href="#home" class="inline-block mb-3 text-base hover:text-danger">5. Giri Unggul</a>
+              </li>
+              <li>
+                <a href="#about" class="inline-block mb-3 text-base hover:text-danger">6. Ruang Rapat</a>
+              </li>
+              <li>
+                <a href="#portfolio" class="inline-block mb-3 text-base hover:text-danger">7. Giri Pustaka</a>
+              </li>
+              <li>
+                <a href="#clients" class="inline-block mb-3 text-base hover:text-danger">8. Perkemahan</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full mb-12 md:w-1/4">
+            <ul class="flex items-end justify-around w-full h-44">
+              <li class="h-10">
+                <div class="flex flex-col items-center justify-center w-12 h-full mb-10 text-white bg-brown">
+                  <img src="/assets/image/phone.svg" alt="Icon Fasilitas" width="20px" />
+                </div>
+              </li>
+              <li class="h-10">
+                <div class="flex flex-col items-center justify-center w-12 h-full mb-10 text-white bg-brown">
+                  <img src="/assets/image/instagram.svg" alt="Icon Fasilitas" width="20px" />
+                </div>
+              </li>
+              <li class="h-10">
+                <div class="flex flex-col items-center justify-center w-12 h-full mb-10 text-white bg-brown">
+                  <img src="/assets/image/facebook.svg" alt="Icon Fasilitas" width="20px" />
+                </div>
+              </li>
+              <li class="h-10">
+                <div class="flex flex-col items-center justify-center w-12 h-full mb-10 text-white bg-brown">
+                  <img src="/assets/image/youtube.svg" alt="Icon Fasilitas" width="20px" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
