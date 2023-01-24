@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;800&display=swap" rel="stylesheet">
     
-    
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config -->
     <script>
       tailwind.config = {
         theme: {
@@ -29,12 +32,17 @@
         },
       };
     </script>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Splide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css">
   </head>
   <body>
     
     <!-- Navbar -->
-    <nav class="absolute top-0 left-0 z-10 flex items-center w-full bg-white">
+    <nav class="fixed top-0 left-0 z-10 flex items-center w-full bg-white">
       <div class="container">
         <div class="relative flex items-center justify-between">
           <div>
@@ -90,7 +98,7 @@
           <li class="w-full lg:w-1/5 group">
             <div class="flex flex-col justify-between h-16 mt-4 lg:mt-0 lg:h-20">
               <h1 class="text-xs lg:text-lg">Fasilitas</h1>
-              <select class="block w-full px-4 py-2 m-0 text-xs font-normal transition ease-in-out bg-white bg-no-repeat appearance-none text-brown form-select bg-clip-padding focus:text-gray-700 outline outline-brown focus:outline-none focus:ring-2 focus:ring-brown focus:ring-opacity-75" aria-label="Default select example">
+              <select class="block w-full px-4 py-2 m-0 text-xs font-normal transition ease-in-out bg-white bg-no-repeat appearance-none lg:text-lg text-brown form-select bg-clip-padding focus:text-gray-700 outline outline-brown focus:outline-none focus:ring-2 focus:ring-brown focus:ring-opacity-75" aria-label="Default select example">
                 <option class="text-brown" selected>Fasilitas</option>
                 <option class="text-brown" value="1">Giri Wijaya</option>
                 <option class="text-brown" value="2">Giri Budaya</option>
@@ -233,7 +241,7 @@
     <!-- Testimoni -->
     <section class="container mt-10">
       <h2 class="mb-6 text-xl md:text-3xl text-brown">Testimoni</h2>
-      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <!-- <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <div class="max-w-sm mx-auto shadow-lg">
           <div class="flex items-center justify-center w-full text-center text-white h-60 bg-brown">
             <h1 class="px-6 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</h1>
@@ -267,9 +275,51 @@
             <h1 class="pb-4 text-sm">Wirausaha</h1>
           </div>
         </div>
+      </div> -->
+      <div class="container mx-auto">
+      <div class="splide">
+        <div class="splide__track">
+          <div class="splide__list">
+            <div class="shadow-lg splide__slide">
+              <div class="flex items-center justify-center w-full text-center text-white h-60 bg-brown">
+                <h1 class="px-6 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</h1>
+              </div>
+              <div class="flex flex-col items-center justify-between px-6 py-3 mb-10 bg-white text-brown">
+                <img src="assets/image/testimoni-1.png
+                " alt="Icon Fasilitas" class="-mt-12" />
+                <h1 class="pt-4 font-extrabold">Adam Smash</h1>
+                <h1 class="pb-4 text-sm">Wirausaha</h1>
+              </div>
+            </div>
+            <div class="shadow-lg splide__slide">
+              <div class="flex items-center justify-center w-full text-center text-white h-60 bg-brown">
+                <h1 class="px-6 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</h1>
+              </div>
+              <div class="flex flex-col items-center justify-between px-6 py-3 mb-10 bg-white text-brown">
+                <img src="assets/image/testimoni-2.png
+                " alt="Icon Fasilitas" class="-mt-12" />
+                <h1 class="pt-4 font-extrabold">Adam Smash</h1>
+                <h1 class="pb-4 text-sm">Wirausaha</h1>
+              </div>
+            </div>
+            <div class="shadow-lg splide__slide">
+              <div class="flex items-center justify-center w-full text-center text-white h-60 bg-brown">
+                <h1 class="px-6 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</h1>
+              </div>
+              <div class="flex flex-col items-center justify-between px-6 py-3 mb-10 bg-white text-brown">
+                <img src="assets/image/testimoni-3.png
+                " alt="Icon Fasilitas" class="-mt-12" />
+                <h1 class="pt-4 font-extrabold">Adam Smash</h1>
+                <h1 class="pb-4 text-sm">Wirausaha</h1>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
 
+    </section>
+    
     <!-- Kontak Kami -->
     <section class="container mt-10">
       <h2 class="mb-6 text-xl md:text-3xl text-brown">Kontak Kami</h2>
@@ -334,28 +384,28 @@
             <h3 class="mb-5 text-xl font-semibold text-brown">Fasilitas</h3>
             <ul class="flex flex-col flex-wrap text-slate-500 h-36">
               <li>
-                <a href="#home" class="inline-block mb-3 text-base hover:text-danger">1. Giri Wijaya</a>
+                <a href="#" class="inline-block mb-3 text-base hover:text-danger">1. Giri Wijaya</a>
               </li>
               <li>
-                <a href="#about" class="inline-block mb-3 text-base hover:text-danger">2. Giri Sasan</a>
+                <a href="#" class="inline-block mb-3 text-base hover:text-danger">2. Giri Sasan</a>
               </li>
               <li>
-                <a href="#portfolio" class="inline-block mb-3 text-base hover:text-danger">3. Giti Pustaka</a>
+                <a href="#" class="inline-block mb-3 text-base hover:text-danger">3. Giti Pustaka</a>
               </li>
               <li>
-                <a href="#clients" class="inline-block mb-3 text-base hover:text-danger">4. Giti Boja</a>
+                <a href="#" class="inline-block mb-3 text-base hover:text-danger">4. Giti Boja</a>
               </li>
               <li>
-                <a href="#home" class="inline-block mb-3 text-base hover:text-danger">5. Giri Unggul</a>
+                <a href="#" class="inline-block mb-3 text-base hover:text-danger">5. Giri Unggul</a>
               </li>
               <li>
-                <a href="#about" class="inline-block mb-3 text-base hover:text-danger">6. Ruang Rapat</a>
+                <a href="#" class="inline-block mb-3 text-base hover:text-danger">6. Ruang Rapat</a>
               </li>
               <li>
-                <a href="#portfolio" class="inline-block mb-3 text-base hover:text-danger">7. Giri Pustaka</a>
+                <a href="#" class="inline-block mb-3 text-base hover:text-danger">7. Giri Pustaka</a>
               </li>
               <li>
-                <a href="#clients" class="inline-block mb-3 text-base hover:text-danger">8. Perkemahan</a>
+                <a href="#" class="inline-block mb-3 text-base hover:text-danger">8. Perkemahan</a>
               </li>
             </ul>
           </div>
@@ -387,6 +437,21 @@
       </div>
     </footer>
     
+    <!-- Navbar Hamburger -->
     <script src="assets/js/script.js"></script>
+
+    <!-- Splide Js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/js/splide.min.js"></script>
+    <script>
+      var splide = new Splide('.splide', {
+        type: 'loop',
+        perPage: 3,
+        rewind: true,
+        gap: "1rem"
+      });
+
+      splide.mount();
+    </script>
+
   </body>
 </html>
